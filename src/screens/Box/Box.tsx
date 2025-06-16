@@ -60,6 +60,32 @@ export const Box = (): JSX.Element => {
               )}
             </div>
 
+            {/* Avatar_Bad - Left side position (不开心猫咪) */}
+            <img
+              className="absolute object-cover transition-all duration-300"
+              alt="Bad cat avatar"
+              src="/avatar-bad.png"
+              style={{
+                width: '35.5px',
+                height: '36px',
+                top: '131px',
+                left: '25px'
+              }}
+            />
+
+            {/* Avatar_YellowSmiley - Right side position (开心猫咪) */}
+            <img
+              className="absolute object-cover transition-all duration-300"
+              alt="Happy cat avatar"
+              src="/avatar-yellowsmiley.png"
+              style={{
+                width: '35.5px',
+                height: '36px',
+                top: '126px',
+                left: '329px'
+              }}
+            />
+
             {/* Animated Cat Icon - Centered position with 70% vertical position */}
             <div className="absolute" style={{ 
               top: '70%',
