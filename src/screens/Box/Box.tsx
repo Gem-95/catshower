@@ -60,13 +60,19 @@ export const Box = (): JSX.Element => {
               )}
             </div>
 
-            {/* Animated Cat Icon - Replacing the original avatars */}
-            <div className="absolute" style={{ top: '131px', left: '177px' }}>
+            {/* Animated Cat Icon - Centered position based on the layout */}
+            <div className="absolute" style={{ 
+              top: '400px', // Adjusted to center vertically in the available space
+              left: '50%', 
+              transform: 'translateX(-50%)' // Center horizontally
+            }}>
               <img
-                className="w-[36px] h-[36px] object-cover transition-all duration-300 animate-swing"
+                className="object-cover transition-all duration-300 animate-swing"
                 alt="Animated cat icon"
                 src="/cat-icon.png"
                 style={{
+                  width: '130.5px', // Based on the layout dimensions shown
+                  height: '103.5px',
                   transformOrigin: 'center bottom',
                   animation: 'swing 2s ease-in-out infinite'
                 }}
