@@ -60,9 +60,9 @@ export const Box = (): JSX.Element => {
               )}
             </div>
 
-            {/* Animated Cat Icon - Centered position with 60% vertical position */}
+            {/* Animated Cat Icon - Centered position with 70% vertical position */}
             <div className="absolute" style={{ 
-              top: '60%', // Changed to 60% as requested
+              top: '70%', // Changed to 70% as requested
               left: '50%', 
               transform: 'translate(-50%, -50%)' // Center both horizontally and vertically
             }}>
