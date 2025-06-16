@@ -30,7 +30,7 @@ export const Box = (): JSX.Element => {
     <div className="w-[390px] h-[844px] relative">
       <Card className="fixed w-[390px] h-[844px] top-0 left-0 border-0">
         <CardContent className="p-0 h-[844px] bg-white">
-          <div className="relative w-[390px] h-[844px] bg-[url(/background.png)] bg-cover bg-[50%_50%]">
+          <div className="relative w-[390px] h-[844px] bg-[url(/background-new.png)] bg-cover bg-[50%_50%]">
             
             {/* Timer Display - Replacing the vertical bar */}
             <div className="absolute top-[320px] left-[25px] flex flex-col items-center">
@@ -60,31 +60,18 @@ export const Box = (): JSX.Element => {
               )}
             </div>
 
-            {/* Avatar_Bad - Left side position */}
-            <img
-              className="absolute object-cover transition-all duration-300"
-              alt="Bad cat avatar"
-              src="/avatar-bad.png"
-              style={{
-                width: '35.5px',
-                height: '36px',
-                top: '131px',
-                left: '25px'
-              }}
-            />
-
-            {/* Avatar_YellowSmiley - Right side position */}
-            <img
-              className="absolute object-cover transition-all duration-300"
-              alt="Happy cat avatar"
-              src="/avatar-yellowsmiley.png"
-              style={{
-                width: '35.5px',
-                height: '36px',
-                top: '126px',
-                left: '329px'
-              }}
-            />
+            {/* Animated Cat Icon - Replacing the original avatars */}
+            <div className="absolute" style={{ top: '131px', left: '177px' }}>
+              <img
+                className="w-[36px] h-[36px] object-cover transition-all duration-300 animate-swing"
+                alt="Animated cat icon"
+                src="/cat-icon.png"
+                style={{
+                  transformOrigin: 'center bottom',
+                  animation: 'swing 2s ease-in-out infinite'
+                }}
+              />
+            </div>
 
             {/* Comfort Progress Bar - Custom styled */}
             <div 

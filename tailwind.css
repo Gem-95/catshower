@@ -89,3 +89,18 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+
+/* Custom swing animation for the cat icon */
+@keyframes swing {
+  0%, 100% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+.animate-swing {
+  animation: swing 2s ease-in-out infinite;
+  transform-origin: center bottom;
+}
