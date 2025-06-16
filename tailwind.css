@@ -93,14 +93,14 @@
 /* Custom swing animation for the cat icon */
 @keyframes swing {
   0%, 100% {
-    transform: rotate(-15deg);
+    transform: rotate(-10deg);
   }
   50% {
-    transform: rotate(15deg);
+    transform: rotate(10deg);
   }
 }
 
 .animate-swing {
-  animation: swing 2s ease-in-out infinite;
+  animation: swing 1s ease-in-out infinite;
   transform-origin: center bottom;
 }
